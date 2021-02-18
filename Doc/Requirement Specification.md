@@ -14,6 +14,7 @@ We're a small cheese store in Eger, where we sell a wide vareity of cheeses from
 
 # 3. Scope
 
+Our vision is to have an online website, where we can sell our products to our customers without them having to travel to our shop. On this website they can browse all of our products in store and see details about them. After choosing their desired product, they have the option to purchase it on the website. After that, our team can see the order on the website, and manage it. The shipping process then can be done manually by one of our employees. Besides that, we would like to have a user management system where our customers can register, fill out their personal information like their name and shipping address, so they can purchase with their account easily.
 
 # 4. Functional Requirements
 

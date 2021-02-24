@@ -27,5 +27,18 @@ Our vision is to have an online website, where we can sell our products to our c
 
 # 7. Requested Business Model
 
+- Having a registered account and being logged in is a requirement for online purchases on the website.
+
+- Users need to be logged in to access their personal page, data, ongoing orders, past orders, etc.
+
+- Recommended aspect ratio to fully experience the website's design is 16:9, but it supports other screen sizes as well due to it being responsive.
+
+- The customers must have a stable internet connection in order to connect to the website and use it without any major disruptions.
+
+- Connection to the database has to be set and fully functional.
+
+- Website admins can modify the list of items available in the webshop (add new items, delete items, modify items, etc).
+
+- Website admins can set discounts to the available items for a limited time.
 
 # 8. Request List

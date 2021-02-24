@@ -24,6 +24,11 @@ Our vision is to have an online website, where we can sell our products to our c
 
 # 6. Current Business Model
 
+Our team is currently in great obsession of cheese and because of this we have decided to open our own cheese webshop so we can share this love for cheese with other people. Our webshop is going to feature all kinds of cheese from the very common to the quite rare ones. If a customer is completely new to the world of cheese and can't decide which cheese to buy that's no problem either as the customers can contact us to recommend different types of cheese to them based on their taste and need.
+
+Before we can release our webshop we will do our research on different cheese types in order for better understanding when categorizing or recommending them to customers. For example, our customer has access to a small variety of cheese because of not living im a major city or a bigger town. In this case our webshop is a great choice to try numerous types of cheese that the customer does not have access to for some reasons. Items can be easily ordered through our webshop so there's no need to travel far for experiencing new cheeses or just restocking.
+
+From our point of view ordering an item online is a much more convenient way than taking any public transport to visit a store and spend maybe hours getting there and looking for the specific item the customer wants. Ordering cheeses online can come in handy especially if the customer doesn't have much free time because of work schedules for example. Of course the main advantage of online orders is not dealing with people on the way or in the store while looking for the perfect cheese roll.
 
 # 7. Requested Business Model
 

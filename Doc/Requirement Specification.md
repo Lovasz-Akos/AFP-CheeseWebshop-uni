@@ -19,8 +19,14 @@ Our vision is to have an online website, where we can sell our products to our c
 # 4. Functional Requirements
 
 
+
 # 5. Standards & Laws
 
+## General Standards
+
+## Browser Requirements
+
+## Online Shop Regulations
 
 # 6. Current Business Model
 

@@ -4,6 +4,7 @@ We have spotted a gap in the market for a webshop where many types of cheeses ar
 
 # 2. Scope
 
+Our vision is to have an online website, where we can sell our products to our customers without them having to travel to our shop. On this website they can browse all of our products in store and see details about them. After choosing their desired product, they have the option to purchase it on the website. After that, our team can see the order on the website, and manage it. The shipping process then can be done manually by one of our employees.
 
 # 3. Standards & Laws
 

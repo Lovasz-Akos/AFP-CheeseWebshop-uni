@@ -38,8 +38,13 @@ Application must meet the following general standards:
 4. The Products - The items (in this case the cheese) which are presented in the webshop.
 5. Regulations - Rules of the online shop.
 
-**General provisions: **
+**General provisions:**
 
+1.  Online shop is run by the seller.
+2.  The regulations define the rules for the conclusion between the seller and the customer contracts for the sale of goods by means of distance communication and use by customers of the online store.
+3.  Information about the price given in the online store is binding from the moment of receipt of the e-mails. After successful submission of the order, this price will not change regardless of changes in the prices in the store, which may arise in relation to particular goods.
+4.  Photos of the goods are placed in the online store for exemplary purposes only and are specifically indicated in the presentation of the goods.
+5.  Prerequisite for a successful placing an order, is to provide accurate and real data at registration as well as at the Order Page.
 
 # 6. Current Business Model
 

@@ -1,8 +1,11 @@
 # 1. Overview 
 
+## 1.1 About this document
+
 Our team has decided to create a fully functional website for people who would like to enjoy a wide vareity of cheeses without leaving the comforts of their homes, by providing a shop that offers deliveries of our whole selection. This document describes the project in detail, including the website's functionality, the team members, their roles and responsibilities, technologies we use in this project, development plans etc.
 
 ## 1.2 Project Overview:
+
 
 
 # 2. Project plan

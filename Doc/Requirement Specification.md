@@ -10,7 +10,7 @@ We create these sites with the help of the Laravel framework, but we can use dif
 
 # 2. Current State
 
-We're a small cheese store in Eger, where we sell a wide vareity of cheeses from all around the world. During the past 6 years we've been gradually expanding our selection, and our expertise in the field. However, the demand for high quality import cheese, especially ones with italian and greek origins. To keep up with the demand, as well as expand our ability to serve even more customers who may not be able to visit our shop locally, we decided to create a website where you can browse our offerings and order cheese to be delivered right into the customer's hands.
+We have studied the market for the last year and it is quite obvious that there is a market gap for a quality, accessible webshop that offers a wide vareity of cheesees. To meet this need in the market, we decided to create a website where you can browse our offerings and order cheese to be delivered right into the customer's hands.
 
 # 3. Scope
 

@@ -1,5 +1,6 @@
 # 1. Current State 
 
+We have spotted a gap in the market for a webshop where many types of cheeses are availible to order for delivery, thus not having to visit a retail store where there's no garuantee that you can find what you're looking for. For this reason we decided to create a webshop for just that. A beautiful, accessible webshop where a wide vareity of cheeses are availible for order.
 
 # 2. Scope
 

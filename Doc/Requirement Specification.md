@@ -28,9 +28,12 @@ Application must meet the following general standards:
 1. Must be easily understandable and be easily used by anyone.
 2. 
 ## Browser Requirements
- -- Google Chrome
- -- Mozilla Firefox
- -- Opera
+ - Google Chrome
+
+ - Mozilla Firefox
+
+ - Opera
+ 
 ## Online Shop Regulations
 1. The Salesman in the cheese shop
 2. The Customer - The person who is looking forward of using the website for ordering cheese, who must be at least 14 years of age.

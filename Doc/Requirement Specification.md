@@ -26,7 +26,14 @@ If you want to see about the funcional requirements you can find out more in the
 Application must meet the following general standards:
 
 1. Must be easily understandable and be easily used by anyone.
-2. 
+2. Must function in a logical manner for the users.
+3. Must use the industry best practices.
+4. Must use styles that are consistent throughout the application and within the associated website, including:
+
+- Error messages must appear in a consistent location and style.
+- Form controls that are not available must be hidden.
+
+
 ## Browser Requirements
  - Google Chrome
 

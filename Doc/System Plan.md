@@ -30,26 +30,44 @@ Some additional information:
 # 2. Project plan
 ## 2.1 Roles and responsibilities
 ### Backend developer:
-
-
+Backend developers are responsible for developing the server-side code, they create the website's functions, and the data structures. They mainly use PHP codes.
 ### Frontend developer:
-
-
+Frontend developers implement the visual elements that users see and interact with in the website. They make sure that users have no trouble navigating the website. They use HTML, CSS, JavaScript codes.
 ### Database developer:
-
+Database developers are responsible for the storage and management of the data we use in this website. 
 
 ## 2.2 Team members
 
+- Krigovszki Bálint - Full-stack developer
+- Szenczi Boldizsár - Full-stack developer
+- Lovász Ákos - Full-stack developer
+
+- Dombi Tibor Dávid - Senior developer, supervisor
+- Balog Balázs - Supervisor
 
 ## 2.3 Project schedule
 
+- 2021/02/25 Requirement and Functional specification documents
+- 2021/03/01 System Plan
+- 2021/03/04 Development start (Sprint 1)
+- 2021/03/18 Development (Sprint 2)
+- 2021/04/01 Introduce our project with a demo (+ Development Sprint 3)
+- 2021/04/15 Development (Sprint 4), testing
+- 2021/04/29 Development finish(Sprint 5), testing
+- 2021/05/06 Review, project finish
 
+## 2.4 Technologies
+### Web framework – Bootstap
+Bootstap will be used to make the dynamic layout of the webshop, so it works smoothly on all resolutions in the browsers.
 
-## 2.4 Milestones
+### Web server – Apache
+An Apache web server will be used to store the database information, in which we will store the database writen in MySQL structure.
 
+### Programming language – PHP
+We are going to write our code in PHP, since it is the most used programming language for building websites. The PHP version which is going to be used is PHP 7.4 or higher since Laravel needs that environment.
 
-## 2.5 Technologies
-
+### Data structure store – MySQL
+The database structure will be written accordig to the MySQL standards. Recommended version: MySQL 8.0
 
 ### Communication – Discord, GitHub, Trello
 - Discord is a communication software made for voice chat. Since Discord is free we are gonna use this software, because it is not sure that all of us will be in the same room when our company develops the webshop the client asked for. With this we will be able to communicate in real time with our coding partners, and since it has a normal chat function that follows the written messages, it will be easy to trace back with the problems that are brought up during development.

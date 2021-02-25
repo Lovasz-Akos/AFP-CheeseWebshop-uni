@@ -14,19 +14,32 @@ We have studied the market for the last year and it is quite obvious that there 
 
 # 3. Scope
 
-Our vision is to have an online website, where we can sell our products to our customers without them having to travel to our shop. On this website they can browse all of our products in store and see details about them. After choosing their desired product, they have the option to purchase it on the website. After that, our team can see the order on the website, and manage it. The shipping process then can be done manually by one of our employees.
+Our vision is to have an online website, where we can sell our products to our customers without them having to travel to our shop. On this website they can browse all of our products in store and see details about them. After choosing their desired product, they have the option to purchase it on the website. After that, our team can see the order on the website, and manage it. The shipping process then can be done manually by one of our employees. Besides that, we would like to have a user management system where our customers can register, fill out their personal information like their name and shipping address, so they can purchase with their account easily.
 
 # 4. Functional Requirements
 
-
+If you want to see about the funcional requirements you can find out more in the point 8. of the doc, in the 'Request list'.
 
 # 5. Standards & Laws
 
 ## General Standards
+Application must meet the following general standards:
 
+1. Must be easily understandable and be easily used by anyone.
+2. 
 ## Browser Requirements
-
+ -- Google Chrome
+ -- Mozilla Firefox
+ -- Opera
 ## Online Shop Regulations
+1. The Salesman in the cheese shop
+2. The Customer - The person who is looking forward of using the website for ordering cheese, who must be at least 14 years of age.
+3. The Webshop - The internet service where a person can order an item they are looking for.
+4. The Products - The items (in this case the cheese) which are presented in the webshop.
+5. Regulations - Rules of the online shop.
+
+**General provisions: **
+
 
 # 6. Current Business Model
 

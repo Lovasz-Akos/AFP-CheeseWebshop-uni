@@ -8,7 +8,22 @@ Our vision is to have an online website, where we can sell our products to our c
 
 # 3. Standards & Laws
 
+## General Standards
+Application must meet the following general standards:
 
+1.  Must be easily understandable and easy to use for the users.
+2.  Must function in a logical manner for the users.
+3.  Must use the industry best practices.
+4.  Must use styles that are consistent throughout the application and within the associated Web site, including:
+
+-   Error messages must appear in a consistent location and style.
+-   Form controls that are not available must be hidden.
+
+## Browser Requirements
+ - Google Chrome
+ - Mozilla Firefox
+ - Opera
+ 
 # 4. Current business model
 
 Our team is currently in great obsession of cheese and because of this we have decided to open our own cheese webshop so we can share this love for cheese with other people. Our webshop is going to feature all kinds of cheese from the very common to the quite rare ones. If a customer is completely new to the world of cheese and can't decide which cheese to buy that's no problem either as the customers can contact us to recommend different types of cheese to them based on their taste and need.
@@ -55,3 +70,21 @@ Pages | Shopping cart | Contains the items the customer has put in the cart
 Pages | Orders | Users can see ther current or past orders
 
 # 7. Use-Cases:
+
+## User:
+- Able to register a new account
+- Able to log in to their account
+- Able to log out to their account
+- Able to see the home page
+- Able to see the product listings by category
+- Can filter through the products
+- Can open a product and see it's detailed description page
+- Able to add products to their cart
+- Able to finish the order
+
+## Manager:
+- Has all the user privileges
+- Able to add a new product
+- Can modify an existing product
+- Able to remove a product
+- Has access to and able to see all the orders from other users

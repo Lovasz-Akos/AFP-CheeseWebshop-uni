@@ -74,7 +74,10 @@ Pages | Orders | Users can see ther current or past orders
 ## User:
 - Able to register a new account
 - Able to log in to their account
-- Able to log out to their account
+- Able to log out of their account
+- Able to change their password
+- Able to see their profile page
+- Able to edit their profile page
 - Able to see the home page
 - Able to see the product listings by category
 - Can filter through the products
@@ -87,4 +90,5 @@ Pages | Orders | Users can see ther current or past orders
 - Able to add a new product
 - Can modify an existing product
 - Able to remove a product
+- Able to set discount on products
 - Has access to and able to see all the orders from other users

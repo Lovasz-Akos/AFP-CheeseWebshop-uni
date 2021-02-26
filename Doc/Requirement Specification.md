@@ -14,7 +14,7 @@ We have studied the market for the last year and it is quite obvious that there 
 
 # 3. Scope
 
-Our vision is to have an online website, where we can sell our products to our customers without them having to travel to our shop. On this website they can browse all of our products in store and see details about them. After choosing their desired product, they have the option to purchase it on the website. After that, our team can see the order on the website, and manage it. The shipping process then can be done manually by one of our employees.
+Our vision is to have an online website, where we can sell our products to our customers without them having to travel to our shop. On this website they can browse all of our products in store and see details about them. After choosing their desired product, they have the option to purchase it on the website. After that, our team can see the order on the website, and manage it. The shipping process then can be done manually by one of our employees. Besides that, we would like to have a user management system where our customers can register, fill out their personal information like their name and shipping address, so they can purchase with their account easily.
 
 # 4. Functional Requirements
 
@@ -68,6 +68,7 @@ Application must meet the following general standards:
 3.  An order shall be made by logging in to the store, addition of the goods to the shopping cart and confirmation of the order. In the absence of the customer registration in the online shop placing an order is not possible.
 4.  Sending the order by the customer constitutes an offer submitted by the customer to the seller to enter into a contract of sale, in accordance with the regulations.
 5.  After sending the order the customer receives confirmation of acceptance of his offer by electronic means (confirmation of the order), at the e-mail address indicated by the customer. After receiving above-mentioned acceptance agreement of sale is valid.
+
 
 # 6. Current Business Model
 

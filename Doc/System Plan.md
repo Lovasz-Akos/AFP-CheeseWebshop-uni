@@ -78,7 +78,7 @@ The database structure will be written accordig to the MySQL standards. Recommen
 
 
 # 3. Business model
-
+![Business Model](https://github.com/LovaszAkos/AFP2-4-PifPafPuf/tree/main/Doc/Figures/BM.png)
 
 # 4. Requirements
 

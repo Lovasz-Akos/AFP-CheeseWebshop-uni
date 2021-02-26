@@ -25,23 +25,22 @@ If you want to see about the funcional requirements you can find out more in the
 ## General Standards
 Application must meet the following general standards:
 
-1. Must be easily understandable and be easily used by anyone.
-2. Must function in a logical manner for the users.
-3. Must use the industry best practices.
-4. Must use styles that are consistent throughout the application and within the associated website, including:
+1.  Must be easily understandable and easy to use for the users.
+2.  Must function in a logical manner for the users.
+3.  Must use the industry best practices.
+4.  Must use styles that are consistent throughout the application and within the associated Web site, including:
 
-- Error messages must appear in a consistent location and style.
-- Form controls that are not available must be hidden.
-
+-   Error messages must appear in a consistent location and style.
+-   Form controls that are not available must be hidden.
 
 ## Browser Requirements
  - Google Chrome
-
  - Mozilla Firefox
-
  - Opera
  
 ## Online Shop Regulations
+**Definitions:**
+
 1. The Salesman in the cheese shop
 2. The Customer - The person who is looking forward of using the website for ordering cheese, who must be at least 14 years of age.
 3. The Webshop - The internet service where a person can order an item they are looking for.
@@ -55,6 +54,20 @@ Application must meet the following general standards:
 3.  Information about the price given in the online store is binding from the moment of receipt of the e-mails. After successful submission of the order, this price will not change regardless of changes in the prices in the store, which may arise in relation to particular goods.
 4.  Photos of the goods are placed in the online store for exemplary purposes only and are specifically indicated in the presentation of the goods.
 5.  Prerequisite for a successful placing an order, is to provide accurate and real data at registration as well as at the Order Page.
+
+**The scope of the terms and conditions of use the online shop:**
+
+1.  To use the service provided by the online store, the customer need to recognize these rules and accept them.
+2.  The provided information in the registration form and Order Page should be truthful and current. If the customer provides incorrect or outdated information, in particular as regards to the personal data of the customer, the seller is not obliged to carry out orders. It is prohibited to transfer or make available by the customer illegal content or infringe the rights of third parties.
+3.  Seller shall take the necessary technical and organizational measures to prevent acquisition and modification data provided by the customer during registration and when ordering by unauthorized users.
+
+**Placing an order:**
+
+1.  Orders for goods available in the online shop are made through the Order Page, available in the store.
+2.  Placing an order through Order Page is possible around the clock, every day of the week. Orders placed on weekdays will be implemented on an ongoing basis. Orders placed on Saturdays, Ssundays and holidays will be implemented no earlier than the next business day.
+3.  An order shall be made by logging in to the store, addition of the goods to the shopping cart and confirmation of the order. In the absence of the customer registration in the online shop placing an order is not possible.
+4.  Sending the order by the customer constitutes an offer submitted by the customer to the seller to enter into a contract of sale, in accordance with the regulations.
+5.  After sending the order the customer receives confirmation of acceptance of his offer by electronic means (confirmation of the order), at the e-mail address indicated by the customer. After receiving above-mentioned acceptance agreement of sale is valid.
 
 
 # 6. Current Business Model

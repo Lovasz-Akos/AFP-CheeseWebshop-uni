@@ -78,7 +78,7 @@ The database structure will be written accordig to the MySQL standards. Recommen
 
 
 # 3. Business model
-![Business Model](/Figures/BM.png)
+![Business Model](/Doc/Figures/BM.png)
 
 # 4. Requirements
 

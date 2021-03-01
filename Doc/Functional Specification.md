@@ -81,7 +81,7 @@ Pages | Orders | Users can see ther current or past orders
 - Able to see the home page
 - Able to see the product listings by category
 - Can filter through the products
-- Can open a product and see it's detailed description page
+- Can open a product and see its detailed description page
 - Able to add products to their cart
 - Able to finish the order
 

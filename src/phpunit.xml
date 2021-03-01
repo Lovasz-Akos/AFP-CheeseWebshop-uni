@@ -15,6 +15,12 @@
         </include>
         <exclude>
             <directory>./app/Console</directory>
+            <directory>./app/Actions/Fortify</directory>
+            <directory>./app/Providers</directory>
+            <directory>./app/Exceptions</directory>
+            <directory>./app/Http/Middleware</directory>
+            <file>./app/Http/Controllers/Controller.php</file>
+            <file>./app/Http/Kernel.php</file>
         </exclude>
     </coverage>
     <php>

@@ -120,9 +120,60 @@ Supported browsers:
 - Based on PHP language and the user's demands
 
 # 5. Functions
+## 5.1 Participants
+The website has two user levels:
+- Customer
+- Administrator
+
+## 5.2 Use cases and scenarios
+
+### Customer:
+- Able to register a new account
+- Able to log in to their account
+- Able to log out of their account
+- Able to change their password
+- Able to see their profile page
+- Able to edit their profile page
+- Able to see the home page
+- Able to see the product listings by category
+- Can filter through the products
+- Can open a product and see its detailed description page
+- Able to add products to their cart
+- Able to finish the order
+
+### Administrator:
+- Has all the user privileges
+- Able to add a new product
+- Can modify an existing product
+- Able to remove a product
+- Able to set discount on products
+- Has access to and able to see all the orders from other users
 
 
 # 6. Physical environments
+-   Software and external systems we're working with:
+    -   Sublime Text Editor
+    -   PhpStorm
+    -   Gitkraken/Github
+    -   Trello
+    -   Visual Studio Code
+    -   Discord
+
+-   Hardware and Network:
+    -   General hardware and network requirements
+
+-   Development tools:
+    -   Visual Studio Code
+    -   PhpStorm
+    -   Sublime Text Editor
+
+-   Technologies:
+    -   Bootstrap
+    -   Apache
+    -   PHPMyAdmin
+    -   MySQL
+    -   PHP
+    -   Node.js
 
 
 # 7. Architecture plan

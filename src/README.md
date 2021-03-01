@@ -7,6 +7,41 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## About this repository
+This repository is a boilerplate for a standard Laravel project. It has alread configured Fortify package, phpunit, xdebug, powershell scripts and code coverage tester.
+
+## Prerequisites
+This boilerplate needs the following:
+- [(XAMPP recommended)](https://www.apachefriends.org/index.html)
+- php 8.0+ with xdebug extension
+- [composer](https://getcomposer.org/)
+- [node.js](https://nodejs.org/en/)
+- [yarn](https://yarnpkg.com/getting-started/install)
+
+### Allow powershell script execution
+By default PowerShell does not allow script execution because security reasons. However if you would like to use my scripts, you have to allow it.
+Open powershell as administrator and paste the following code:
+
+```ps
+set-executionpolicy unrestricted
+```
+And voile, now you can use any .ps1 script.
+
+### Using Chocolatey
+When developing on windows I strongly recomend using [Chocolatey](https://chocolatey.org/) as your package manager. This way you can ensure you are using the latest version of everything.
+
+If you don't have Chocolatey installed, I have a script which installs EVERY required app including Chocolatey.
+
+### Install XDebug
+On windows, open a new powershell, and execute this code:
+```ps
+php -i | clip ; Start-Process https://xdebug.org/wizard
+```
+This command already copied php info to your clipboard. Now paste it in the textbox, click "analyse" and follow the instructions.
+
+On Linux or mac go to https://xdebug.org/ and follow the instructions there.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -43,14 +78,6 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
 - **[DevSquad](https://devsquad.com)**
 - **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 

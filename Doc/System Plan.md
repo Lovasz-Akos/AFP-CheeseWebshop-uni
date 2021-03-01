@@ -81,7 +81,43 @@ The database structure will be written accordig to the MySQL standards. Recommen
 ![Business Model](/Doc/Figures/BM.png)
 
 # 4. Requirements
+## 4.1 Functional Requirements
 
+Using common website elements and user management system:
+- **Register:** The users should be able to sign up. This is also required for shopping and to use the shopping cart. After registration they will have a Profile Page.
+- **Logging in and out:** Editors and users should be able to log in and out.
+- **Possibility to change password:** Users' passwords should be changeable.
+- **Profile details:** Users should be able to see and modify their profile details.
+- **Data modification:** The user should be able to modify his/her personal information at the Profile Page.
+- **Navigation to different pages:** Users should be able to navigate to any pages.
+- **Permission rules:** Some pages require to login first before navigation.
+
+Webshop functions:
+- **Showing cards:** Users can easily separate the items and its descriptions when we show them as cards. 
+- **Listing items, browsing:** The customer should be able to look around between the products and filter the them in the website.
+- **Shopping cart:** The customer should be able to add or remove products to his/her cart.
+- **Product details:** The customer should be able to see our products' details in a separate page.
+
+## 4.2 Non-funtional Requirements
+The site must (be):
+- Easy to use
+- User-friendly
+- Navigate to the corresponding page
+- Show error messages in different and consistent location and style
+- Have control panels, button (some of them hidden from the general users)
+- Have permission system
+- Fit the EU Privacy Policy requirements
+
+Supported browsers:
+- Mozilla Firefox
+- Microsoft Edge
+- Google Chrome
+## 4.3 Resources:
+- Fully functional database with tables and relations
+- Secure connection
+- Intuitive/easy to use interface
+- Creative front-end palette
+- Based on PHP language and the user's demands
 
 # 5. Functions
 

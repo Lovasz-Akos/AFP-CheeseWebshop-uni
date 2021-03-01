@@ -115,6 +115,29 @@ The website has two user levels:
 
 
 # 6. Physical environments
+-   Software and external systems we're working with:
+    -   Sublime Text Editor
+    -   PhpStorm
+    -   Gitkraken/Github
+    -   Trello
+    -   Visual Studio Code
+    -   Discord
+
+-   Hardware and Network:
+    -   General hardware and network requirements
+
+-   Development tools:
+    -   Visual Studio Code
+    -   PhpStorm
+    -   Sublime Text Editor
+
+-   Technologies:
+    -   Bootstrap
+    -   Apache
+    -   PHPMyAdmin
+    -   MySQL
+    -   PHP
+    -   Node.js
 
 
 # 7. Architecture plan

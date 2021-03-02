@@ -10,6 +10,58 @@
 ## About this repository
 This repository is a boilerplate for a standard Laravel project. It has alread configured Fortify package, phpunit, xdebug, powershell scripts and code coverage tester.
 
+## Usage
+### Install everything
+The laravel.ps1 script is able to check your enviroment for prerequisites and install the missing components. This also:
+- Install composer packages
+- Install npm packagages (with yarn)
+- Copy the `.env.example` to `.env`
+- Run migrations
+- Run seeders
+- Compile scss files
+- Compile js file
+
+>**Please make sure to create a database with the name defined in `.env.example`. Later you can rename it.**
+
+> Note: To run ps1 scripts you need to [Allow powershell script execution](#allow-powershell-script-execution)
+
+While in the laravel root folder (src) run the following:
+```ps
+./laravel.ps1 init
+```
+
+Run this command every day, just after pulling the latest changes of Your repository.
+
+### Regenerate your database
+When you edit your migrations you can re-migrate everything and run the seeders with the following command:
+
+```ps
+php artisan migrate:fresh --seed
+# Or:
+./laravel.ps1 db
+```
+
+### Compile sass and js files
+To compile your resources in to a single app.css and app.js you can run:
+```ps
+yarn run development
+# Or:
+./laravel.ps1 compile
+# Or:
+./laravel.ps1 c
+```
+
+### Running tests
+To run every test in `Tests` folder and create the code coverage report you can run:
+```ps
+./vendor/bin/phpunit --coverage-html tests/Coverage
+#Then manually open the coverage report in ./tests/Coverage/index.html
+# Or:
+./laravel.ps1 test
+# Or:
+./laravel.ps1 t
+```
+
 ## Prerequisites
 This boilerplate needs the following:
 - [(XAMPP recommended)](https://www.apachefriends.org/index.html)
@@ -28,9 +80,9 @@ set-executionpolicy unrestricted
 And voile, now you can use any .ps1 script.
 
 ### Using Chocolatey
-When developing on windows I strongly recomend using [Chocolatey](https://chocolatey.org/) as your package manager. This way you can ensure you are using the latest version of everything.
+When developing on windows, I strongly recomend using [Chocolatey](https://chocolatey.org/) as your package manager. This way you can ensure you are using the latest version of everything.
 
-If you don't have Chocolatey installed, I have a script which installs EVERY required app including Chocolatey.
+If you don't have Chocolatey installed, `./laravel.ps1 init` installs EVERY required app including Chocolatey.
 
 ### Install XDebug
 On windows, open a new powershell, and execute this code:
@@ -41,6 +93,9 @@ This command already copied php info to your clipboard. Now paste it in the text
 
 On Linux or mac go to https://xdebug.org/ and follow the instructions there.
 
+---
+---
+---
 
 ## About Laravel
 

@@ -203,7 +203,7 @@ The cart contains the products the customer would like to order.
  - **amount:** Amount of the item that the package has.
 
   ### Database Plan
- ![DatabasePlan](https://github.com/LovaszAkos/AFP2-4-PifPafPuf/blob/master/doc/Figures/DB_Plan.png)
+  ![Database Plan](/Doc/Figures/Database_Plan.png)
 
 
 # 9. Implementation plan

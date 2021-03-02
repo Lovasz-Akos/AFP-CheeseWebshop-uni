@@ -145,6 +145,63 @@ The website has two user levels:
 
 # 8. Database plan
 
+## 8.1 Objects
+
+### Users
+
+Users are registered accounts on the website.
+- **id:** A unique identification number that is assigned at registration to every user. 
+- **username:** A unique username required for creating an account.
+- **first_name:** First name of the user.
+- **last_name:** Last name of the user.
+- **email:** Email address of the user. (used for sending order and account information)
+- **password:** A one way hashed password that is required to log in to an account.
+- **address:** Shipping/billing address for this user.
+- **zip_code:** The user's zip code.
+- **permission:** Permission level of the user.
+	- 0 = User
+	- 1 = Administrator
+
+### Products
+Products are all kinds of cheese that are being sold on the website.
+- **id:** An unique identification number, that is automatically incremented.
+- **product_name:** The name of the product.
+- **product_brand:** The brand of the product.
+- **category:** Category the product belongs to.
+- **price:** A path that shows the location of and image of the product.
+- **in_stock:** Numeric value that indicates how many are available to order.
+- **image:** Product image file name.
+- **description:** Detailed description of the product.
+- **short_description:** Shortened description of the product.
+
+### Orders
+Customers' orders will be stored here with all the necessary information for shipping.
+- **id:** Unique identification number for each order.
+- **user_id:** The identification number of the user who made the order.
+- **first_name:** First name of the customer.
+- **last_name:** Last name of the customer.
+- **address:** Shipping/billing address of the customer.
+- **zip_code:** The customer's zip code.
+- **city:** The city the customer is located in.
+- **country:** The country the customer is located in.
+- **complete:** Order status.
+- **order_time:** The date and time of the order.
+
+
+## 8.2 Helper tables
+
+### Cart
+The cart contains the products the customer would like to order.
+- **user_id:** The id of the user
+- **product_id:** The id of the product
+- **amount:** The amount of the product the customer would like to order.
+ 
+### Package
+ The package contains the items of each order.
+ - **product_id:** The identification number of the product that has been ordered.
+ - **order_id:** The identification number of the order this package belongs to.
+ - **amount:** Amount of the item that the package has.
+
 
 # 9. Implementation plan
 

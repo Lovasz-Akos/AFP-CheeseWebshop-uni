@@ -180,7 +180,8 @@ The website has two user levels:
 ## Backend
 The system needs a database system, so we are using a Visual Studio based client, where we store the user's data and the products. The web client is based on PHP technologies, which helps the client to be stable. Also we can create amazing content for the users. Furthermore, it will be used to create the website's functions, handle user data and article content.
 ## Frontend
-The frontend is using HTML and CSS codes.
+The frontend is using HTML and CSS codes and using Bootstrap as its framework, which will create a good-looking website and makes it possible to use it on multiple platforms.
+
 
 # 8. Database plan
 

@@ -177,6 +177,10 @@ The website has two user levels:
 
 
 # 7. Architecture plan
+## Backend
+The system needs a database system,where we store the user's data and the products. We're basing the backend on PHP technologies, which helps the client to be stable. Also we can create amazing content for the users. Furthermore, it will be used to create the website's functions, handle user data and article content.
+## Frontend
+The frontend is using HTML and CSS codes and using Bootstrap as its library, which will create a good-looking, modern website, making it responsive and makes it possible to use it on multiple platforms. 
 
 
 # 8. Database plan
@@ -243,6 +247,6 @@ The cart contains the products the customer would like to order.
 
 
 # 9. Implementation plan
-
+In our project we are using PHP as our programming technology since it is our best option for web development. Furthermore since we're using Laravel, the version of PHP have to be 7.2 or higher to be compatible with it.
 
 # 10. Test plan

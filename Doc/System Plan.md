@@ -247,7 +247,7 @@ The cart contains the products the customer would like to order.
 
 
 # 9. Implementation plan
-When we're implementing new features in the site, we're using PHP, HTML/CSS coding. First of all, we need to implement the database through all the tables before doing the coding part. Since our website is database oriented mostly, so we have to start the backend coding, and so the frontend will be using the backend data which will exist by then. On the frontend we will use the Laravel framework to progress.
+In our project we are using PHP as our programming technology since it is our best option for web development. Furthermore since we're using Laravel, the version of PHP have to be 7.2 or higher to be compatible with it.
 
 # 10. Test plan
 

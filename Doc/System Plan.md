@@ -250,17 +250,3 @@ The cart contains the products the customer would like to order.
 In our project we are using PHP as our programming technology since it is our best option for web development. Furthermore since we're using Laravel, the version of PHP have to be 7.2 or higher to be compatible with it.
 
 # 10. Test plan
-
-* Main Page
-* Register Page
-* Login
-* Logout
-* Forgot PW
-* Order
-* Product List
-* Shopping Cart
-* Product Page
-* Add to cart
-* Cheese Page
-* Database Import
-* Database Reach

@@ -250,3 +250,17 @@ The cart contains the products the customer would like to order.
 When we're implementing new features in the site, we're using PHP, HTML/CSS coding. First of all, we need to implement the database through all the tables before doing the coding part. Since our website is database oriented mostly, so we have to start the backend coding, and so the frontend will be using the backend data which will exist by then. On the frontend we will use the Laravel framework to progress.
 
 # 10. Test plan
+
+* Main Page
+* Register Page
+* Login
+* Logout
+* Forgot PW
+* Order
+* Product List
+* Shopping Cart
+* Product Page
+* Add to cart
+* Cheese Page
+* Database Import
+* Database Reach

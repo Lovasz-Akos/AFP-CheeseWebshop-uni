@@ -178,10 +178,9 @@ The website has two user levels:
 
 # 7. Architecture plan
 ## Backend
-Our project's system requires a database system, since we need to store the user accounts' data et cedera. The web client will be based off of PHP programming languages for stability. With these functions we can provide the users service. We need this to create more functions for the website, so article content and user data.
-
+The system needs a database system, so we are using a Visual Studio based client, where we store the user's data and the products. The web client is based on PHP technologies, which helps the client to be stable. Also we can create amazing content for the users. Furthermore, it will be used to create the website's functions, handle user data and article content.
 ## Frontend
-On the frontend we are using the Laravel framework, so we can handle the website easy and manage it well, through Laravel we are using HTML CSS codes.
+The frontend is using HTML and CSS codes.
 
 # 8. Database plan
 

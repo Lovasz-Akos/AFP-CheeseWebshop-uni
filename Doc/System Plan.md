@@ -78,15 +78,102 @@ The database structure will be written accordig to the MySQL standards. Recommen
 
 
 # 3. Business model
-
+![Business Model](/Doc/Figures/BM.png)
 
 # 4. Requirements
+## 4.1 Functional Requirements
 
+Using common website elements and user management system:
+- **Register:** The users should be able to sign up. This is also required for shopping and to use the shopping cart. After registration they will have a Profile Page.
+- **Logging in and out:** Editors and users should be able to log in and out.
+- **Possibility to change password:** Users' passwords should be changeable.
+- **Profile details:** Users should be able to see and modify their profile details.
+- **Data modification:** The user should be able to modify his/her personal information at the Profile Page.
+- **Navigation to different pages:** Users should be able to navigate to any pages.
+- **Permission rules:** Some pages require to login first before navigation.
+
+Webshop functions:
+- **Showing cards:** Users can easily separate the items and its descriptions when we show them as cards. 
+- **Listing items, browsing:** The customer should be able to look around between the products and filter the them in the website.
+- **Shopping cart:** The customer should be able to add or remove products to his/her cart.
+- **Product details:** The customer should be able to see our products' details in a separate page.
+
+## 4.2 Non-funtional Requirements
+The site must (be):
+- Easy to use
+- User-friendly
+- Navigate to the corresponding page
+- Show error messages in different and consistent location and style
+- Have control panels, button (some of them hidden from the general users)
+- Have permission system
+- Fit the EU Privacy Policy requirements
+
+Supported browsers:
+- Mozilla Firefox
+- Microsoft Edge
+- Google Chrome
+## 4.3 Resources:
+- Fully functional database with tables and relations
+- Secure connection
+- Intuitive/easy to use interface
+- Creative front-end palette
+- Based on PHP language and the user's demands
 
 # 5. Functions
+## 5.1 Participants
+The website has two user levels:
+- Customer
+- Administrator
+
+## 5.2 Use cases and scenarios
+
+### Customer:
+- Able to register a new account
+- Able to log in to their account
+- Able to log out of their account
+- Able to change their password
+- Able to see their profile page
+- Able to edit their profile page
+- Able to see the home page
+- Able to see the product listings by category
+- Can filter through the products
+- Can open a product and see its detailed description page
+- Able to add products to their cart
+- Able to finish the order
+
+### Administrator:
+- Has all the user privileges
+- Able to add a new product
+- Can modify an existing product
+- Able to remove a product
+- Able to set discount on products
+- Has access to and able to see all the orders from other users
 
 
 # 6. Physical environments
+-   Software and external systems we're working with:
+    -   Sublime Text Editor
+    -   PhpStorm
+    -   Gitkraken/Github
+    -   Trello
+    -   Visual Studio Code
+    -   Discord
+
+-   Hardware and Network:
+    -   General hardware and network requirements
+
+-   Development tools:
+    -   Visual Studio Code
+    -   PhpStorm
+    -   Sublime Text Editor
+
+-   Technologies:
+    -   Bootstrap
+    -   Apache
+    -   PHPMyAdmin
+    -   MySQL
+    -   PHP
+    -   Node.js
 
 
 # 7. Architecture plan
@@ -97,6 +184,66 @@ Our project's system requires a database system, since we need to store the user
 On the frontend we are using the Laravel framework, so we can handle the website easy and manage it well, through Laravel we are using HTML CSS codes.
 
 # 8. Database plan
+
+## 8.1 Objects
+
+### Users
+
+Users are registered accounts on the website.
+- **id:** A unique identification number that is assigned at registration to every user. 
+- **username:** A unique username required for creating an account.
+- **first_name:** First name of the user.
+- **last_name:** Last name of the user.
+- **email:** Email address of the user. (used for sending order and account information)
+- **password:** A one way hashed password that is required to log in to an account.
+- **address:** Shipping/billing address for this user.
+- **zip_code:** The user's zip code.
+- **permission:** Permission level of the user.
+	- 0 = User
+	- 1 = Administrator
+
+### Products
+Products are all kinds of cheese that are being sold on the website.
+- **id:** An unique identification number, that is automatically incremented.
+- **product_name:** The name of the product.
+- **product_brand:** The brand of the product.
+- **category:** Category the product belongs to.
+- **price:** A path that shows the location of and image of the product.
+- **in_stock:** Numeric value that indicates how many are available to order.
+- **image:** Product image file name.
+- **description:** Detailed description of the product.
+- **short_description:** Shortened description of the product.
+
+### Orders
+Customers' orders will be stored here with all the necessary information for shipping.
+- **id:** Unique identification number for each order.
+- **user_id:** The identification number of the user who made the order.
+- **first_name:** First name of the customer.
+- **last_name:** Last name of the customer.
+- **address:** Shipping/billing address of the customer.
+- **zip_code:** The customer's zip code.
+- **city:** The city the customer is located in.
+- **country:** The country the customer is located in.
+- **complete:** Order status.
+- **order_time:** The date and time of the order.
+
+
+## 8.2 Helper tables
+
+### Cart
+The cart contains the products the customer would like to order.
+- **user_id:** The id of the user
+- **product_id:** The id of the product
+- **amount:** The amount of the product the customer would like to order.
+ 
+### Package
+ The package contains the items of each order.
+ - **product_id:** The identification number of the product that has been ordered.
+ - **order_id:** The identification number of the order this package belongs to.
+ - **amount:** Amount of the item that the package has.
+
+  ### Database Plan
+  ![Database Plan](/Doc/Figures/Database_Plan.png)
 
 
 # 9. Implementation plan

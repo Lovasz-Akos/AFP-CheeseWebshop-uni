@@ -90,7 +90,11 @@ The database structure will be written accordig to the MySQL standards. Recommen
 
 
 # 7. Architecture plan
+## Backend
+Our project's system requires a database system, since we need to store the user accounts' data et cedera. The web client will be based off of PHP programming languages for stability. With these functions we can provide the users service. We need this to create more functions for the website, so article content and user data.
 
+## Frontend
+On the frontend we are using the Laravel framework, so we can handle the website easy and manage it well, through Laravel we are using HTML CSS codes.
 
 # 8. Database plan
 

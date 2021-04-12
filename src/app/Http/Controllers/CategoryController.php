@@ -13,26 +13,27 @@ class CategoryController extends Controller
     {
         return view('category.index', ['categories' => Category::all()]);
     }
-    
+
     public function create()
     {
         return view('category.form');
     }
-    
+
     public function store(CategoryRequest $request)
     {
-        Category::create($request -> validated());
+        Category::create($request->validated());
         return redirect(route('category.index'), 201);
     }
-    
+
     public function show(Category $category)
     {
         return view('category.show', ['category' => $category]);
     }
-    
+
     public function edit(Category $category)
     {
         return view('category.form', ['category' => $category]);
+        //front end handle: <input type="text" value="{{ $category?->name }}"></input>"
     }
 
     public function update(CategoryRequest $request, Category $category)
@@ -42,12 +43,12 @@ class CategoryController extends Controller
 
         return redirect(route('category.show', [$category->id]), 204);
     }
-    
+
     public function destroy(CategoryDestroyRequest $request, Category $category)
     {
-        $request->validated();
-        
+        //$request->validated();
         $category->delete();
+
         return redirect(route('category.index'));
     }
 }

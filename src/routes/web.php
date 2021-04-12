@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Route::view('home', 'home')->middleware('auth');
 
-Route::group(['middleware'=>'auth'], function($router){
+Route::group(['middleware' => 'auth'], function ($router){
     Route::resource('category', CategoryController::class)->only(['create', 'edit']);
 });
-
+Route::resource('category', CategoryController::class)->except(['create', 'edit']);
 Route::resource('category', CategoryController::class)->except(['create','edit']);

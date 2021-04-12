@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,9 @@ Route::get('/', function () {
 });
 
 Route::view('home', 'home')->middleware('auth');
+
+Route::group(['middleware'=>'auth'], function($router){
+    Route::resource('category', CategoryController::class)->only(['create', 'edit']);
+});
+
+Route::resource('category', CategoryController::class)->except(['create','edit']);

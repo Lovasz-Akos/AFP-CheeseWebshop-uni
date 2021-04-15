@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class CategoryRequest extends FormRequest
+class ProductRequest extends FormRequest
 {
 
     public function authorize()
@@ -14,7 +14,6 @@ class CategoryRequest extends FormRequest
         return true;                              
     }
 
-    
     public function rules()
     {
         return [

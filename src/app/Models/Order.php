@@ -6,15 +6,22 @@ use App\Traits\ApiResource;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Order extends Model
 {
     use HasFactory, ApiResource;
 
     protected $fillable = [
-        'name'
+        'first_name',
+        'last_name',
+        'address',
+        'zip_code',
+        'city',
+        'country',
+        'complete',
+        'order_time'
     ];
 
     public function products(){
-        return $this->hasMany(Product::class);
+        return $this->belongsTo(Product::class)->WithPivot(['amount']);
     }
 }

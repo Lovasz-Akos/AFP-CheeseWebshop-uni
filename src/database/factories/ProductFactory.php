@@ -19,7 +19,7 @@ class ProductFactory extends Factory
             'in_stock' => $this->faker->numberBetween(0, 1000),
             'description' => $this->faker->paragraph(6),
             'short_description' => $this->faker->paragraph(2),
-            'category_id' => Category::inRandomOrder()->first()->id
+            'category_id' => Category::random()->id
         ];
     }
 }

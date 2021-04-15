@@ -23,7 +23,7 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         Order::create($request->validated());
-        return redirect(route('order.index'), 201);
+        return redirect(route('order.index'));
     }
 
     
@@ -44,7 +44,7 @@ class OrderController extends Controller
         $order->update($request->validated());
         $order->save();
 
-        return redirect(route('order.show', [$order->id]), 204);
+        return redirect(route('order.show', [$order->id]));
     }
 
     

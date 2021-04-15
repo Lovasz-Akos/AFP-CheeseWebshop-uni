@@ -11,7 +11,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return view('category.index', ['categories' => Category::all()]);
+        return view('category.index', ['categories' => Category::paginate(5)]); //5 is the # displayed per page
     }
 
     public function create()

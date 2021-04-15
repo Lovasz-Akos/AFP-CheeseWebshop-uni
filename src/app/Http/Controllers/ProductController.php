@@ -23,7 +23,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         Product::create($request->validated());
-        return redirect(route('product.index'), 201);
+        return redirect(route('product.index'));
     }
 
     
@@ -44,7 +44,7 @@ class ProductController extends Controller
         $product->update($request->validated());
         $product->save();
 
-        return redirect(route('product.show', [$product->id]), 204);
+        return redirect(route('product.show', [$product->id]));
     }
 
     

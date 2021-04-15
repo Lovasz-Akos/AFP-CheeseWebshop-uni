@@ -13,7 +13,11 @@ class OrderingSeeder extends Seeder
     {
         /**@var Order $order */
         foreach(Order::all() as $order){
-            $order->products()->attach(Product::random(), ['amount'=>3]);
+
+            $products = Product::sample(random_int(0,10));
+            foreach ($products as $product) {
+                $order->products()->attach($product, ['amount'=>random_int(1,8)]);
+            }
         }
     }
 }

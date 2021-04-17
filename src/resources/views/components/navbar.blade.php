@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<div class="navbar-custom">
+<nav class="navbar navbar-expand-md">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             Cheesy Shop
@@ -16,3 +17,4 @@
         </div>
     </div>
 </nav>
+</div>

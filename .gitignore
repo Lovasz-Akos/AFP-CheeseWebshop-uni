@@ -4,3 +4,5 @@ src/.idea/
 src/public/js/app.js
 
 src/public/mix-manifest.json
+
+.idea/

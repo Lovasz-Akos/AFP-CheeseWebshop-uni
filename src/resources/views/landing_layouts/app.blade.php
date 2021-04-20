@@ -25,14 +25,10 @@
 </head>
 <body>
     <div id="app">
-        @include('components.navbar')
 
         <main class="py-4">
             @yield('content')
         </main>
-        <footer class="footer mt-auto py-3">
-            @include('components.footer')
-        </footer>
     </div>
     @stack('js')
 </body>

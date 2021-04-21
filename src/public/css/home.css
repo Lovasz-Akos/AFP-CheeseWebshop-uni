@@ -1,5 +1,5 @@
 .navbar-custom {background-color: goldenrod;font-family: 'Comfortaa', cursive;padding: 0px;box-shadow: inset 0px -20px 20px -10px rgba(0,0,0,0.25);}
-.navbar-custom a{height: 100%;padding-top: 16px;padding-bottom: 16px;padding-right: 20px !important;padding-left: 20px !important;transition: 0.5s;}
+.navbar-custom a{height: 100%;padding-top: 16px;padding-bottom: 16px;padding-right: 20px !important;padding-left: 20px !important;transition: 0.5s;color: black;}
 .navbar-custom a:hover{transition: 0.5s;text-shadow: 0 0 10px #FFFFFF;}
 .navbar-brand {color: white !important;}
 .navbar {padding: 0px;box-shadow: inset 0px -10px 20px -10px rgba(0,0,0,0.05);}

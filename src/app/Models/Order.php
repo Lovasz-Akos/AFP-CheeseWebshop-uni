@@ -45,11 +45,19 @@ class Order extends Model
 
     public function setLastName($lastname)
     {
+<<<<<<< HEAD
         $this->lirst_name = $lirstname;
     }
     public function getLirstName()
     {
         return $this->lirst_name;
+=======
+        $this->last_name = $lastname;
+    }
+    public function getLastName()
+    {
+        return $this->last_name;
+>>>>>>> Boldi
     }
 
     public function setAddress($address)

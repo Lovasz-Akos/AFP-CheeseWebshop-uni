@@ -3,30 +3,36 @@
 namespace Tests\Database;
 
 use App\Models\Product;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Tests\TestCase;
 
 class ProductDbTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testProductModel()
+    public function testProductDatabaseConnection(): void
     {
-        $model = Product::create([
-             'brand' => 'Test Brand',
-             'name' => 'Test Name',
-             'price' => 100,
-             'in_stock' => 200,
-             'description' => 'Test Description',
-             'short_description' => 'Test Short Description'
-         ]);
+        try{
+            $result = Product::all();
+            self::assertNotNull($result);
+        }catch (\Exception $exception){
+            self::fail($exception->getMessage());
+        }
+    }
 
-        $model->refresh();
+    public function testProductStructure(): void
+    {
+        $subject = Product::random();
 
-        self::assertNotNull($model->id);
-        self::assertEquals('Test Brand', $model->brand);
+        self::assertNotNull($subject->brand);
+        
+    }
+
+    public function testProductModelConnections(): void
+    {
+        $subject = Product::random();
+
+        self::assertNotNull($subject->product);
+
+        self::assertInstanceOf(BelongsTo::class, $subject->product());
     }
 }

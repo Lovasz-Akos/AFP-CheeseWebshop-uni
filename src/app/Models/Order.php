@@ -45,7 +45,7 @@ class Order extends Model
 
     public function setLastName($lastname)
     {
-        $this->lirst_name = $lirstname;
+        $this->last_name = $lastname;
     }
     public function getLirstName()
     {

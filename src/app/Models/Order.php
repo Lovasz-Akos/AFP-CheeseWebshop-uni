@@ -47,7 +47,7 @@ class Order extends Model
     {
         $this->last_name = $lastname;
     }
-    public function getLasttName()
+    public function getLastName()
     {
         return $this->last_name;
     }

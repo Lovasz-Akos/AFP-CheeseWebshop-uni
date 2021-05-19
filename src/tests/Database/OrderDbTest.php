@@ -23,7 +23,19 @@ class OrderDbTest extends TestCase
     {
         $subject = Order::random();
 
-        self::assertNotNull($subject->brand);
+        self::assertNotNull($subject->id);
+
+        self::assertNotNull($subject->first_name);
+        self::assertNotNull($subject->last_name);
+        self::assertNotNull($subject->address);
+        self::assertNotNull($subject->zip_code);
+        self::assertNotNull($subject->city);
+        self::assertNotNull($subject->country);
+        self::assertNotNull($subject->complete);
+        self::assertNotNull($subject->order_time);
+
+        self::assertNotNull($subject->created_at);
+        self::assertNotNull($subject->updated_at);
         
     }
 
@@ -31,8 +43,8 @@ class OrderDbTest extends TestCase
     {
         $subject = Order::random();
 
-        self::assertNotNull($subject->order);
+        self::assertNotNull($subject->products);
 
-        self::assertInstanceOf(BelongsTo::class, $subject->order());
+        self::assertInstanceOf(BelongsToMany::class, $subject->products());
     }
 }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('css')
-    <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/category.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 @endpush
@@ -12,20 +12,29 @@
     use Illuminate\Database\Eloquent\Collection;
     /** @var Collection $categories */
 ?>
-<table>
-    <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach($categories as $category)
-            <tr>
-                <td>{{ $category->id }}</td>
-                <td>{{ $category->name }}</td>
-            </tr>
-        @endforeach
-    </tbody>
-</table>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="category-label">
+                    <div class="card-body">Select a category from below to filter displayed products</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-head">Product Categories</div>
+                <div class="card-body">
+                    <div class="wrapper">
+                        @foreach($categories as $category)
+                            <a href="">
+                                <div class="wrapper-content">
+                                    {{ $category->name }}
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

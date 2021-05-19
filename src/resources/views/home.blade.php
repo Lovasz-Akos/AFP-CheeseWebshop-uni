@@ -22,6 +22,16 @@
                     You are logged in!
                 </div>
             </div>
+            <div class="home-card" >
+            <div class="card">
+                <div class="card-head">
+                Welcome to Cheesy, {{ Auth::user()->name }}
+                </div>
+                <div class="card-body">
+                    <div class="top-text">Choose where you would like to go, using the navigation bar</div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,6 +1,45 @@
-.navbar-custom {background-color: goldenrod;font-family: 'Comfortaa', cursive;padding: 0px;box-shadow: inset 0px -20px 20px -10px rgba(0,0,0,0.25);}
+/*#region navbar*/
+.navbar-custom {background-color: #facc6b;background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);font-family: 'Comfortaa', cursive;padding: 0px;/*box-shadow: inset 0px -20px 20px -10px rgba(0,0,0,0.25);*/}
 .navbar-custom a{height: 100%;padding-top: 16px;padding-bottom: 16px;padding-right: 20px !important;padding-left: 20px !important;transition: 0.5s;color: black;}
 .navbar-custom a:hover{transition: 0.5s;text-shadow: 0 0 10px #FFFFFF;}
 .navbar-brand {color: white !important;}
 .navbar {padding: 0px;box-shadow: inset 0px -10px 20px -10px rgba(0,0,0,0.05);}
+.navbar button:hover {transition: 0.5s ease;background-color: rgba(0,0,0,0.1) !important;}
 .dropdown-item a{color: black;}
+/*#endregion*/
+body {
+    background: linear-gradient(60deg, #29323c 0%, #485563 100%) no-repeat center center fixed;
+    background-size: cover;
+}
+.card {
+    border: 0px;
+}
+.home-card {
+    margin-top: 3%;
+}
+.home-card .card {
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+}
+.home-card .card-head {
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    background-color: #facc6b;
+    background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+    padding: 16px;
+    font-size: 20px;
+}
+.home-card .top-text {
+    font-size: 18px;
+    margin-top: 1%;
+}
+/* li {
+    line-height: 2.5em;
+    font-size: 16px;;
+}
+li::marker {
+    vertical-align: middle;
+    font-size: 40px;
+    color: goldenrod;
+    margin-right: 10px;
+} */

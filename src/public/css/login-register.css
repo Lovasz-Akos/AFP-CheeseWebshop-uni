@@ -1,3 +1,30 @@
+/*#region navbar*/
+.navbar-custom {
+    background-color: #facc6b;
+    background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
+    font-family: 'Comfortaa', cursive;
+    padding: 0px;
+}
+.navbar-custom a{
+    border-radius: 5px;
+    margin-left: 15px;
+    height: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    color:white;
+    transition: 0.5s;
+}
+.navbar-custom a:hover{
+    background-color: goldenrod;
+    transition: 0.5s;
+    text-shadow: 0 0 10px #FFFFFF;
+}
+.navbar {
+    padding: 0px;
+}
+/*#endregion*/
 body {
     background-image: url("../img/cheese.jpg");
     background-size: cover;
@@ -41,7 +68,8 @@ body {
     border-top-left-radius: 15px !important;
     border-top-right-radius: 15px !important;
     color: white;
-    background-color: goldenrod;
+    background-color: #facc6b;
+    background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
 }
 
 .remember {
@@ -54,12 +82,15 @@ body {
 .login-btn button {
     border: 0;
     width: 50%;
-    background-color: goldenrod;
+    background-color: #facc6b;
+    background: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%);
     margin-bottom: 10px;
+    transition: 0.5s ease;
 }
 .login-btn button:hover {
     transition: 0.5s ease;
-    background-color: #ebb93b;
+    background: linear-gradient(315deg, #fcd788 0%, #fdc960 74%);
+    margin-bottom: 10px;
 }
 input[type=checkbox]:checked {
     background-color: goldenrod;
@@ -69,31 +100,4 @@ input[type=checkbox]:checked {
 }
 .footer {
     margin-top: -20px;
-}
-.navbar-custom {
-    background-color: #c99718;
-    font-family: 'Comfortaa', cursive;
-    padding: 0px;
-    box-shadow: inset 0px -20px 20px -10px rgba(0,0,0,0.25);
-}
-.navbar-custom a{
-    font-weight: bold;
-    border-radius: 5px;
-    margin-left: 15px;
-    height: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-    color:white;
-    transition: 0.5s;
-}
-.navbar-custom a:hover{
-    background-color: goldenrod;
-    transition: 0.5s;
-    text-shadow: 0 0 10px #FFFFFF;
-}
-.navbar {
-    padding: 0px;
-    box-shadow: inset 0px -20px 20px -10px rgba(0,0,0,0.25);
 }

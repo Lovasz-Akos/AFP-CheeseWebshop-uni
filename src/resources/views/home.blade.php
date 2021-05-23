@@ -28,7 +28,8 @@
                 Welcome to Cheesy, {{ Auth::user()->name }}
                 </div>
                 <div class="card-body">
-                    <div class="top-text">Choose where you would like to go, using the navigation bar</div>
+                    <div class="top-text">There are {{ $order_count }} new orders. <a href="{{ route('order.index') }}">To orders &gt;&gt;</a></div>
+                    <div class="top-text">There are {{ $register_count }} new users this week. <a href="{{ route('user.index') }}">To users &gt;&gt;</a></div>
                 </div>
             </div>
             </div>

@@ -22,7 +22,7 @@ class CreateOrdersTable extends Migration
             $table->integer('zip_code');
             $table->string('city');
             $table->string('country');
-            $table->integer('status');
+            $table->integer('status')->default(0);
 
             $table->timestamps();
         });

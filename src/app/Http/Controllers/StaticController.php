@@ -21,7 +21,7 @@ class StaticController extends Controller
         if(Auth::user()->is_admin) {
             return view('home', [
                 'order_count' => Order::where('status', '<', '1')->count(),
-                'register_count' => User::whereDate('created_at', '<=', now()->subDays(7)->startOfDay()->toDateTimeString())->get()
+                'register_count' => User::whereDate('created_at', '>=', now()->subDays(7)->startOfDay()->toDateTimeString())->count()
                 //startOfDay() is needed, because now it starts counting from midnight, not the current time. Without this you need to write subDay(8), which is fine I guess, but less obvious
             ]);
         }

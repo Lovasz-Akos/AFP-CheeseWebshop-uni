@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth'], function ($router){
     Route::resource('product', ProductController::class)->only(['create', 'edit']);
     Route::resource('order', OrderController::class);
     Route::resource('user', UserController::class)->except('create', 'store');
+    Route::get('profile', [UserController::class, 'profile'])->name('profile');
 });
 
 Route::resource('category', CategoryController::class)->except(['create', 'edit']);

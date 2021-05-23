@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,7 @@ Route::view('home', 'home')->middleware('auth');
 Route::group(['middleware' => 'auth'], function ($router){
     Route::resource('category', CategoryController::class)->only(['create', 'edit']);
     Route::resource('product', ProductController::class)->only(['create', 'edit']);
+    Route::resource('order', OrderController::class);
 });
 
 Route::resource('category', CategoryController::class)->except(['create', 'edit']);

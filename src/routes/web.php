@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth'], function ($router){
     Route::resource('order', OrderController::class);
     Route::resource('user', UserController::class)->except('create', 'store');
     Route::get('profile', [UserController::class, 'profile'])->name('profile');
+    Route::patch('/user/{user}', [UserController::class, 'setAdmin'])->name('user.setAdmin');
 });
 
 Route::resource('category', CategoryController::class)->except(['create', 'edit']);

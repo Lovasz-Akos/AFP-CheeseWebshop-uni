@@ -9,10 +9,22 @@ use Auth;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\{Factory as ViewFactory, View};
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 
 class UserController extends Controller
 {
+    
+    public function setAdmin(User $user, Request $request){
+        if(!Auth::user()->is_admin){
+            abort(StatusCode::FORBIDDEN, 'You can not change the authorization of a user');
+        }
+
+        $user->is_admin = $request->get('is_admin') === '1';
+        $user->save();
+
+        return redirect(route('user.show', [$user]));
+    }
 
     public function index(): ViewFactory|View|Application
     {

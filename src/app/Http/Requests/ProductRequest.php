@@ -1,7 +1,9 @@
+
 <?php
 
 namespace App\Http\Requests;
 
+use App\Models\Category;
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
@@ -18,13 +20,18 @@ class ProductRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'min:2', 'unique:products, name'],
+            'name' => [
+                'required',
+                'min:2',
+                Rule::unique('products', 'name')->ignore($this->product->id)
+            ],
             'brand' => ['required'],
             'price' => ['required', 'numeric', 'min:100'],
-            'in_stock' => ['reuqired'],
+            'in_stock' => ['numeric'],
             'description' => ['required'],
             'short_description' => ['required'],
-            'category_id' => ['required', 'exists:categories, id']
+            'category_id' => ['required_without:category', 'exists:categories,id'],
+            'category' => ['required_without:category', 'exists:categories,name']
         ];
     }
 }

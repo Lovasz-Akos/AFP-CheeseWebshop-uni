@@ -24,7 +24,7 @@
 
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="d-flex flex-column min-vh-100">
         @include('components.navbar')
 
         <main class="py-4">

@@ -15,13 +15,10 @@
                 <div class="product-details">
                 Brand: {{ $product->brand }} <br>
                 Price: {{ $product->price }} <br>
-                In stock: {{ $product->in_stock }} <br>
                 </div>
                 <p>{{ $product->short_description }}</p>
                 <div class="card-button">
-                    <form action="">
-                        <button class="btn" type="submit">Place Order</button>
-                    </form>
+                    <a href="{{ route('product.show', [$product]) }}" class="btn btn-warning">Details &gtcc;</a>
                 </div>
             </div>
         </div>

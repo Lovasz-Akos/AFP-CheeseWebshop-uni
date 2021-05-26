@@ -11,12 +11,12 @@ use Illuminate\Http\RedirectResponse;
 
 class StaticController extends Controller
 {
-    public function welcome(): ViewFactory|View|Application|RedirectResponse
+    public function welcome(): ViewFactory|View|Application
     {
         return view('welcome');
     }
 
-    public function home(): ViewFactory|View|Application
+    public function home(): ViewFactory|View|Application|RedirectResponse
     {
         if(Auth::user()->is_admin) {
             return view('home', [

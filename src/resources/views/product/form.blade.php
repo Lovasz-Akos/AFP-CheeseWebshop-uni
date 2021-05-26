@@ -1,18 +1,24 @@
 @extends('layouts.app')
 
+@push('css')
+    <link href="{{ asset('css/product_show.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+@endpush
+
 @section('content')
     @php
-    $product = $product ?? null; //If you do not set a variable it throws an error, so we set it to something easy to check
+        $product = $product ?? null; //If you do not set a variable it throws an error, so we set it to something easy to check
     @endphp
     <div class="container">
         <div class="wrapper row">
             <div class="col-auto col-lg-3"></div>
             <div class="card col-12 col-lg-6">
-                <div class="card-header">
-                    <h4>Edit Product</h4>
+                <div class="card-head">
+                    Edit Product
                 </div>
                 <div class="card-body">
-                    <x-form
+                <x-form
                         :to="$product ? route('product.update', [$product]) : route('product.store')"
                         :method="$product ? 'put' : 'post'"
                         :allowFile="true"
@@ -71,7 +77,7 @@
                                       class="my-3 form-file-input"
                         >
                         </x-form.input>
-                        <x-form.submit />
+                        <div class="submit-button"><x-form.submit /></div>
                     </x-form>
                 </div>
             </div>

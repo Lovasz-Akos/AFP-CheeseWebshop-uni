@@ -11,6 +11,7 @@ $type = $type ?? 'text';
            value="{{ $value ?? '' }}"
            @isset($required) required @endisset()
            @isset($disabled) disabled @endisset()/>
+
         <datalist id="{{ \Illuminate\Support\Str::plural($name) }}">
             @foreach($options as $value)
                 <option value="{{ $value }}"></option>
@@ -39,3 +40,4 @@ $type = $type ?? 'text';
     <div class="alert alert-danger">{{ $message }}</div>
     @enderror
 </div>
+

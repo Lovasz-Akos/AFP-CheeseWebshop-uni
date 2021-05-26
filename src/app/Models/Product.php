@@ -17,7 +17,8 @@ class Product extends Model
         'in_stock',
         'image',
         'description',
-        'short_description'
+        'short_description',
+        'category_id'
     ];
 
     public function category(){

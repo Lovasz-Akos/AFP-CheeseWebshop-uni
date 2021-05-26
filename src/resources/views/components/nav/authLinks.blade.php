@@ -31,7 +31,7 @@
 
             <!-- TODO: Fix white characters! -->
             <ul class="dropdown-menu text-dark" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">My profile</a></li> <!-- TODO: Remove examples if not needed -->
+                <li><a class="dropdown-item" href="{{ route('profile') }}">My profile</a></li> <!-- TODO: Remove examples if not needed -->
                 <li><a class="dropdown-item" href="#">Orders</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><input class="dropdown-item" type="submit" form="logout-form" value="Logout" /></li>

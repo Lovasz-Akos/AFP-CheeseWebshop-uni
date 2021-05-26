@@ -21,11 +21,13 @@
 body {background: linear-gradient(60deg, #29323c 0%, #485563 100%) no-repeat center center fixed; background-size: cover;}
 .wrapper img {
     float:right;
+    max-width: inherit;
 }
 .desc {
     margin-bottom: 2%;
 }
 .buttons {
+    margin-bottom: 2%;
     margin-left: 3%
 }
 .buttons a {

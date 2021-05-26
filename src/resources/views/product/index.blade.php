@@ -11,7 +11,7 @@
         <div class="card">
             <div class="card-head">{{ $product->name }}</div>
             <div class="card-body">
-                <img src="{{ asset('img/product_img.png') }}" width="100px" height="100px" alt=""> <!-- placeholder img -->
+            <img src="{{ asset($product->image ?? 'img/product_img.png') }}" width="100px" height="100px" alt=""> <!-- placeholder img -->
                 <div class="product-details">
                 Brand: {{ $product->brand }} <br>
                 Price: {{ $product->price }} <br>

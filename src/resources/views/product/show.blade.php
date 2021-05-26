@@ -12,7 +12,7 @@
         <div class="card-head">{{ $product->name }}</div>
             <div class="row mx-1 mx-lg-4">
                 <div class="col-12 col-lg-4">
-                    <img src="{{ asset('img/product_img.png') }}" alt="">
+                <img src="{{ asset($product->image ?? 'img/product_img.png') }}" style="max-width: inherit" alt="">
                 </div>
                 <div class="col-12 col-lg-8">
                     <div class="my-lg-3">{{--  Spacer  --}}&nbsp;&nbsp;</div>
@@ -30,6 +30,7 @@
                         <a href="{{ route('order.create', [$product]) }}" class="btn">Place order</a>
                         @if(Auth::user()->is_admin)
                             <a href="{{ route('product.edit', [$product]) }}" class="btn">Edit</a>
+                            <x-button.magic class="btn" :route="route('product.destroy', [$product])" method="delete" confirm="Are you sure you wish to delete this item?">Delete</x-button.magic>
                         @endif
                     </div>
                 </div>

@@ -18,4 +18,4 @@
 
 | Linkek | Beviteli mező ellenőrzés |Reszponzivitás|  HTML, CSS  
 |--| --|--|--|
-|OK| OK| OK |
+|OK| OK| OK | OK|

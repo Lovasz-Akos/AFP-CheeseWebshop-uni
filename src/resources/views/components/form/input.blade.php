@@ -1,5 +1,9 @@
-<div class="form-floating {{ $class ?? '' }}">
-    @switch($type ?? 'text')
+@php
+$type = $type ?? 'text';
+@endphp
+
+<div class="@if($type !== 'file') form-floating @endif {{ $class ?? '' }}">
+    @switch($type)
     @case('select')
     <input list="{{ \Illuminate\Support\Str::plural($name) }}"
            class="form-control {{ $inputClass ?? '' }} @error($name) is-invalid @enderror"
@@ -23,7 +27,7 @@
         {{--  Text area does includes any spaces or tabs between tags, so watch out  --}}
         @break
     @default
-        <input type="{{ $type ?? 'text' }}"
+    <input type="{{ $type }}"
                class="form-control {{ $inputClass ?? '' }} @error($name) is-invalid @enderror"
                name="{{ $name }}" id="{{ $id ?? $name }}"
                placeholder="{{ $placeholder ?? '' }}"

@@ -31,7 +31,8 @@ class ProductRequest extends FormRequest
             'description' => ['required'],
             'short_description' => ['required'],
             'category_id' => ['required_without:category', 'exists:categories,id'],
-            'category' => ['required_without:category', 'exists:categories,name']
+            'category' => ['required_without:category', 'exists:categories,name'],
+            'image' => ['file', 'mimes:jpg,bmp,png,gif,tiff,jfif', 'max:15360'], //15MB
         ];
     }
 }

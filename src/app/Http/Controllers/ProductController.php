@@ -21,13 +21,16 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('product.form');
+        return view('product.form', [
+            'categories' => Category::all()->map(fn($item) => $item->name)
+        ]);
     }
 
 
-    public function store(Request $request)
+    public function store(ProductRequest $request)
     {
-        Product::create($request->validated());
+        $validated = RequestMap::nameToID($request, Category::class);
+        Product::create($validated);
         return redirect(route('product.index'));
     }
 

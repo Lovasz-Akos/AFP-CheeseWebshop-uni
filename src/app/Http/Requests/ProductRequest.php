@@ -23,7 +23,7 @@ class ProductRequest extends FormRequest
             'name' => [
                 'required',
                 'min:2',
-                Rule::unique('products', 'name')->ignore($this->product->id)
+                Rule::unique('products', 'name')->ignore($this->product?->id ?? '0')
             ],
             'brand' => ['required'],
             'price' => ['required', 'numeric', 'min:100'],

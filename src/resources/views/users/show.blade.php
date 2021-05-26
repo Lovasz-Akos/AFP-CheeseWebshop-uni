@@ -1,17 +1,21 @@
 @extends('layouts.app')
-
+@push('css')
+    <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+@endpush
 @section('content')
     <div class="container">
+        <div class="card-container">
+        <div class="card">
+        <div class="card-head">
+                            {{ $user->name }}
+                        </div>
         <div class="row">
             <div class="col-12 col-md-4">
                 <img src="{{ asset('img/user_placeholder.png') }}" class="img-thumbnail w-50 float-end rounded-circle"  alt="user_profile"/>
             </div>
             <div class="col-12 col-md-4">
-                <div class="row">
-                    <div class="col mt-2 mb-4">
-                        <h4>{{ $user->name }}</h4>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-auto">
                         <table class="table-responsive">
@@ -32,6 +36,7 @@
                                 </tr>
                             @endif
                             <tr>
+                                <div class="buttons">
                                 <td>
                                     @if ($user->id === Auth::id())
                                         <a class="btn btn-primary" href="{{ route('user.edit', [$user]) }}">Edit</a>
@@ -58,6 +63,7 @@
                                         Delete
                                     </x-button.magic>
                                 </td>
+                                </div>
                             </tr>
                             </tbody>
                         </table>
@@ -65,5 +71,7 @@
                 </div>
             </div>
         </div>
+        </div>
+</div>
     </div>
 @endsection

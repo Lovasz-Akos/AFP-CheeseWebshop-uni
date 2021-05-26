@@ -27,7 +27,7 @@ $type = $type ?? 'text';
         {{--  Text area does includes any spaces or tabs between tags, so watch out  --}}
         @break
     @default
-    <input type="{{ $type }}"
+        <input type="{{ $type }}"
                class="form-control {{ $inputClass ?? '' }} @error($name) is-invalid @enderror"
                name="{{ $name }}" id="{{ $id ?? $name }}"
                placeholder="{{ $placeholder ?? '' }}"
@@ -40,3 +40,4 @@ $type = $type ?? 'text';
     <div class="alert alert-danger">{{ $message }}</div>
     @enderror
 </div>
+

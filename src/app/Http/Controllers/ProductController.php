@@ -24,7 +24,6 @@ class ProductController extends Controller
         ]);
     }
 
-
     public function store(ProductRequest $request)
     {
         $validated = RequestMap::nameToID($request, Category::class);
@@ -52,7 +51,6 @@ class ProductController extends Controller
             'categories' => Category::all()->map(fn($item) => $item->name)
         ]);
     }
-
 
     public function update(ProductRequest $request, Product $product)
     {

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OrderRequest;
 use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -10,20 +12,28 @@ class OrderController extends Controller
 
     public function index()
     {
-        return view('order.index', ['order' => Order::all()]);
+        return view('order.index', ['orders' => Order::paginate(30)]);
     }
 
 
-    public function create()
+    public function create(Product $product)
     {
-        return view('order.form');
+        return view('order.form', ['product' => $product]);
     }
 
    
-    public function store(Request $request)
+    public function store(OrderRequest $request)
     {
-        Order::create($request->validated());
-        return redirect(route('order.index'));
+        $validated = $request->validated();
+        $product = $validated['product'];
+        unset($validated['product']);
+
+        /** @var Order $order */
+        $order = Order::create($validated);
+        $order->products()->attach($product, ['amount' => 1]);
+        $order->save();
+
+        return redirect(route('order.show', [$order]));
     }
 
     
@@ -39,12 +49,12 @@ class OrderController extends Controller
     }
 
    
-    public function update(Request $request, Order $order)
+    public function update(OrderRequest $request, Order $order)
     {
         $order->update($request->validated());
         $order->save();
 
-        return redirect(route('order.show', [$order->id]));
+        return redirect(route('order.show', [$order]));
     }
 
     

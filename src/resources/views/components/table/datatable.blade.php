@@ -10,8 +10,8 @@
     <tbody>
     @foreach($for as $item)
         <tr>
-            @foreach($as as $prop)
-                <x-table.property :item="$item" :prop="$prop" />
+            @foreach($as as $key => $prop)
+                <x-table.property :item="$item" :key="$key" :prop="$prop" />
             @endforeach
             @if($operations ?? true)
                     <x-table.operations :item="$item" :route="$route" :view="$view ?? false" :edit="$edit ?? false" :delete="$delete ?? false" />

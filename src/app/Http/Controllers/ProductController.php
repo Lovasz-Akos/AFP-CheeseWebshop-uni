@@ -6,9 +6,7 @@ use App\Http\Requests\ProductRequest;
 use App\Models\Category;
 use App\Models\Product;
 use App\Utils\RequestMap;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
@@ -30,6 +28,12 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $validated = RequestMap::nameToID($request, Category::class);
+        if($request->file()){
+            $validated['image'] = $request->file('image')?->
+            move('img/products',
+                 Str::random() . $request->file('image')?->getClientOriginalExtension()
+            );
+        }
         Product::create($validated);
         return redirect(route('product.index'));
     }
@@ -52,7 +56,14 @@ class ProductController extends Controller
 
     public function update(ProductRequest $request, Product $product)
     {
-        $product->update(RequestMap::nameToID($request, Category::class));
+        $validated = RequestMap::nameToID($request, Category::class);
+        if($request->file()){
+            $validated['image'] = $request->file('image')?->
+            move('img/products',
+                            Str::random() . $request->file('image')?->getClientOriginalExtension()
+            );
+        }
+        $product->update($validated);
         $product->save();
 
         return redirect(route('product.show', [$product->id]));

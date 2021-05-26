@@ -24,7 +24,9 @@ class ProductRequest extends FormRequest
             'in_stock' => ['reuqired'],
             'description' => ['required'],
             'short_description' => ['required'],
-            'category_id' => ['required', 'exists:categories, id']
+            'category_id' => ['required', 'exists:categories, id'],
+            'category' => ['required_without:category', 'exists:categories,name'],
+            'image' => ['file', 'mimes:jpg,bmp,png,gif,tiff,jfif', 'max:15360'], //15MB
         ];
     }
 }

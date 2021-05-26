@@ -7,6 +7,9 @@
 @endpush
 
 @section('content')
+    @php
+        $product = $product ?? null; //If you do not set a variable it throws an error, so we set it to something easy to check
+    @endphp
     <div class="container">
         <div class="wrapper row">
             <div class="col-auto col-lg-3"></div>
@@ -15,45 +18,45 @@
                     Edit Product
                 </div>
                 <div class="card-body">
-                    <x-form :to="route('product.update', [$product])" method="put">
+                <x-form :to="$product ? route('product.update', [$product]) : route('product.store')" :method="$product ? 'put' : 'post'">
                         <x-form.input name="brand"
                                       class="my-3"
                                       placeholder="Something"
-                                      :value="old('brand') ?? $product->brand ?? ''"
+                                      :value="old('brand') ?? $product?->brand ?? ''"
                                       :required="true">
                             Brand
                         </x-form.input>
                         <x-form.input name="name"
                                       class="my-3"
                                       placeholder="Some Name"
-                                      :value="old('name') ?? $product->name ?? ''"
+                                      :value="old('name') ?? $product?->name ?? ''"
                                       :required="true">
                             Product Name
                         </x-form.input>
                         <x-form.input type="number"
                                       name="price"
                                       class="my-3"
-                                      :value="old('price') ?? $product->price ?? ''"
+                                      :value="old('price') ?? $product?->price ?? ''"
                                       :required="true">
                             Price
                         </x-form.input>
                         <x-form.input type="number"
                                       name="in_stock"
                                       class="my-3"
-                                      :value="old('in_stock') ?? $product->in_stock ?? ''">
+                                      :value="old('in_stock') ?? $product?->in_stock ?? ''">
                             Stock
                         </x-form.input>
                         <x-form.input type="textarea"
                                       name="short_description"
                                       class="my-3"
-                                      :value="old('short_description') ?? $product->short_description ?? ''"
+                                      :value="old('short_description') ?? $product?->short_description ?? ''"
                                       :required="true">
                             Short Description
                         </x-form.input>
                         <x-form.input type="textarea"
                                       name="description"
                                       class="my-3"
-                                      :value="old('short_description') ?? $product->short_description ?? ''"
+                                      :value="old('short_description') ?? $product?->short_description ?? ''"
                                       :required="true">
                             Long Description
                         </x-form.input>
@@ -61,7 +64,7 @@
                                       :options="$categories"
                                       name="category"
                                       class="my-3"
-                                      :value="old('category') ?? $product->category?->name ?? ''"
+                                      :value="old('category') ?? $product?->category?->name ?? ''"
                                       :required="true">
                             Category
                         </x-form.input>

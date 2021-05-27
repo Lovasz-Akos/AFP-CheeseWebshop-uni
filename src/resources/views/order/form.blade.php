@@ -9,6 +9,7 @@
 @section('content')
     @php
         $order = $order ?? null; //If you do not set a variable it throws an error, so we set it to something easy to check
+        $product = $product ?? null;
     @endphp
     <div class="container">
         <div class="wrapper row">
@@ -67,7 +68,7 @@
                         </x-form.input>
                         <x-form.input type="hidden"
                                       name="product"
-                                      :value="old('product') ?? $product->id" />
+                                      :value="old('product') ?? $product?->id" />
                         <div class="submit-button"><x-form.submit /></div>
                     </x-form>
                 </div>

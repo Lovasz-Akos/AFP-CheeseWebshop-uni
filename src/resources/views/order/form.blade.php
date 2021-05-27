@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
 @push('css')
+    <link href="{{ asset('css/order.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 @endpush
 
 @section('content')
     @php
         $order = $order ?? null; //If you do not set a variable it throws an error, so we set it to something easy to check
+        $product = $product ?? null;
     @endphp
     <div class="container">
         <div class="wrapper row">
@@ -66,7 +68,7 @@
                         </x-form.input>
                         <x-form.input type="hidden"
                                       name="product"
-                                      :value="old('product') ?? $product->id" />
+                                      :value="old('product') ?? $product?->id" />
                         <div class="submit-button"><x-form.submit /></div>
                     </x-form>
                 </div>

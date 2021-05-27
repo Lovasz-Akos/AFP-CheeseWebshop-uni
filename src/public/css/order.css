@@ -11,13 +11,7 @@ body {
     background: linear-gradient(60deg, #29323c 0%, #485563 100%) no-repeat center center fixed;
     background-size: cover;
 }
-.card-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
 .card {
-    padding-bottom: 2%;
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 5%;
@@ -33,14 +27,17 @@ body {
     border-top-right-radius: 5px 5px;
     padding: 8px;
     font-size: 26px;
-    margin-bottom: 5%;
-}
-.submit-button {
-    text-align: center;
 }
 .submit-button input[type="submit"] {
     background-color: #facc6b;background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%) !important;
 }
 .submit-button input[type="submit"]:hover {
     background-color: #f8d07b;background-image: linear-gradient(315deg, #fad380 0%, #fac252 74%) !important;
+}
+.submit-button {
+    text-align: center;
+}
+.submit-button input[type="submit"] {
+    width: 150px;
+    background-color: #facc6b;background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%) !important;
 }

@@ -1,12 +1,18 @@
 @extends('layouts.app')
 
+@push('css')
+    <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+@endpush
+
 @section('content')
     <div class="container">
         <div class="wrapper row">
             <div class="col-auto col-lg-3"></div>
             <div class="card col-12 col-lg-6">
-                <div class="card-header">
-                    <h4>Edit my Profile</h4>
+                <div class="card-head">
+                    Edit my Profile
                 </div>
                 <div class="card-body">
                     <x-form :to="route('user.update', [$user])" method="put">
@@ -47,7 +53,7 @@
                             Current Password
                         </x-form.input>
 
-                        <x-form.submit />
+                        <div class="submit-button"><x-form.submit /></div>
                     </x-form>
                 </div>
             </div>

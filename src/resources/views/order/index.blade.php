@@ -7,6 +7,9 @@
 @endpush
 
 @push('css')
+    <link href="{{ asset('css/users.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
 @endpush
 
@@ -17,6 +20,7 @@
 
     <div class="container">
         <div class="wrapper">
+            <div class="card">
             <!--suppress PhpUndefinedClassInspection : False report-->
             <x-table.datatable
                 id="order_data"
@@ -40,6 +44,7 @@
                 :edit="true"
                 route="order"
             />
+            </div>
         </div>
     </div>
 @endsection

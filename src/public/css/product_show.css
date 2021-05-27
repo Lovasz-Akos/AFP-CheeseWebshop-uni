@@ -59,12 +59,17 @@ body {background: linear-gradient(60deg, #29323c 0%, #485563 100%) no-repeat cen
  textarea {
      height: 100px !important;
 }
-input[type="submit"] {
+.buttons input[type="submit"] {
+    width: 150px;
     background-color: #facc6b;background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%) !important;
 }
-input[type="submit"]:hover {
+.buttons input[type="submit"]:hover {
     background-color: #f8d07b;background-image: linear-gradient(315deg, #fad380 0%, #fac252 74%) !important;
 }
 .submit-button {
     text-align: center;
+}
+.submit-button input[type="submit"] {
+    width: 150px;
+    background-color: #facc6b;background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%) !important;
 }

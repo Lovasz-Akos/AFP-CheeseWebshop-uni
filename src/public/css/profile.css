@@ -17,7 +17,7 @@ body {
     width: 70%;
 }
 .card {
-    height: 300px;
+    padding-bottom: 2%;
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 5%;
@@ -34,4 +34,13 @@ body {
     padding: 8px;
     font-size: 26px;
     margin-bottom: 5%;
+}
+.submit-button {
+    text-align: center;
+}
+.submit-button input[type="submit"] {
+    background-color: #facc6b;background-image: linear-gradient(315deg, #facc6b 0%, #fabc3c 74%) !important;
+}
+.submit-button input[type="submit"]:hover {
+    background-color: #f8d07b;background-image: linear-gradient(315deg, #fad380 0%, #fac252 74%) !important;
 }
